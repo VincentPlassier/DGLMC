@@ -19,3 +19,26 @@ $ pip install -r requirements.txt
 ## Abstract
 
 Performing reliable Bayesian inference on a big data scale is becoming a keystone in the modern era of machine learning. A workhorse class of methods to achieve this task are Markov chain Monte Carlo (MCMC) algorithms and their design to handle distributed datasets has been the subject of many works. However, existing methods are not completely either reliable or computationally efficient. In this paper, we propose to fill this gap in the case where the dataset is partitioned and stored on computing nodes within a cluster under a master/slaves architecture. We derive a user-friendly centralized distributed MCMC algorithm with provable scaling in high-dimensional settings. We illustrate the relevance of the proposed methodology on both synthetic and real data experiments. [Paper](http://proceedings.mlr.press/v139/plassier21a/plassier21a.pdf)
+
+## File Structure
+
+```
+├── README.md
+├── requirements.txt
+└── src
+    ├── dglmc_dl.py
+    ├── dglmc_np.py
+    ├── ICML_2021_logistic_regression.ipynb
+    ├── ICML_2021_toy_Gaussian_example.ipynb
+    ├── run_dglmc.py
+    ├── run_sgld.py
+    ├── sgld.py
+    ├── toy_example-gauss_posterior.py
+    ├── toy_example-non_convex.py
+    ├── toy_gaussian_2d.py
+    └── utils
+        ├── metrics.py
+        ├── sgld_tools.py
+        ├── tools_dl.py
+        └── uncertainties_tools.py
+```
